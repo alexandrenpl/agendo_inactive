@@ -81,5 +81,5 @@ The app keeps the equipment list and excluded names embedded in the code — ide
 
 ---
 
-Made with ❤️ by [@alexandrenpl](https://github.com/alexandrenpl)
+Made with ❤️ by [@alexandrenpl](https://github.com/alexandrenpl) and 🤖 ChatGPT
 ```
