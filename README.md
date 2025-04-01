@@ -1,6 +1,6 @@
 # Inactive Users per Equipment
 
-This Python script identifies users who haven't used certain lab equipment in the past X months, based on a CSV export from a booking system (e.g., Agendo).
+This Python script identifies users who haven't used certain lab equipment in the past X months, based on a CSV export from the booking system Agendo.
 The input file is a report named  *Last user activity*.
 
 ## ⚙️ Features
