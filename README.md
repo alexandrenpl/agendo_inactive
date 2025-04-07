@@ -1,6 +1,6 @@
 # Inactive Users per Equipment
 
-This Python application identifies users who haven't used specific lab equipment in the past X months, based on a CSV export from the Agendo booking system. It features a simple and interactive graphical interface, allowing quick analysis, editing of filters, and visualisation of results. There is also an executable in dist directory.
+This Python application identifies users who haven't used specific lab equipment in the past X months, based on a CSV report from the Agendo booking system 'Last user activity'. It features a simple and interactive graphical interface, allowing quick analysis, editing of filters, and visualisation of results. There is also an executable in dist directory.
 
 The input file should be a report named **Last user activity**, exported from Agendo.
 
