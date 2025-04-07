@@ -72,6 +72,7 @@ The app keeps the equipment list and excluded names embedded in the code — ide
 - Optional export of results to file.
 - Persistence of user-edited lists between sessions.
 - Option to import custom equipment/exclusion lists.
+- API integration
 
 ## 🧪 Tested on
 
