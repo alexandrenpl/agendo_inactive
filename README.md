@@ -53,7 +53,9 @@ pip install pyinstaller
 2. Run the following command to create a standalone executable:
 
 ```bash
-pyinstaller --onefile --windowed agendo_inactive_exec.py
+pyinstaller --onefile --windowed agendo_inactive.py
+pyinstaller agendo_inactive.spec
+
 ```
 
 - `--onefile`: bundles everything into a single `.exe`.
