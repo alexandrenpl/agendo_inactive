@@ -49,14 +49,14 @@ def analisar_inactivos(file_path, months, recursos):
         filtro = df[(df["resource_name"] == recurso) &
                     (df["last_activity"].isna() | (df["last_activity"] < cutoff_date))]
 
-        inactivos = filtro[["first_name", "last_name", "last_activity"]].drop_duplicates()
+        inactivos = filtro[["first_name", "last_name", "username", "last_activity"]].drop_duplicates()
         inactivos = inactivos[~inactivos[["first_name", "last_name"]].apply(tuple, axis=1).isin(names_to_exclude)]
 
         if not inactivos.empty:
             inactivos = inactivos.sort_values(by="last_activity", ascending=False)
             texto = f"Inactive users for '{recurso}' (>{months} months):\n"
             for _, row in inactivos.iterrows():
-                nome = f"{row['first_name']} {row['last_name']}"
+                nome = f"{row['first_name']} {row['last_name']} {row['username']}"
                 ultima = row['last_activity']
                 ultima_txt = "Never used" if pd.isna(ultima) else ultima.strftime("%Y-%m-%d")
                 if pd.isna(ultima):
